@@ -770,7 +770,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 5px;
-  background-image: url(/img/main-top-check.svg);
+  background-image: url(../img/main-top-check.svg);
 }
 .main .main__middle {
   margin-bottom: 180px;
