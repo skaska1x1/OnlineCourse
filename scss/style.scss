@@ -1,0 +1,18 @@
+// main
+@import 'block/reset';
+@import 'block/extend'; // наследование @extend
+// html
+@import 'block/container';
+@import 'block/header';
+@import 'block/main';
+@import 'block/events';
+@import 'block/certificate';
+@import 'block/team';
+@import 'block/testimonails';
+@import 'block/index-blog';
+@import 'block/subscribe';
+@import 'block/footer';
+// details
+@import 'block/colors';
+@import 'block/size';
+@import 'block/btn-primary';

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="scss/style.min.css">
+</head>
+
+<body>
+    @@include('parts/header.html')
+    @@include('parts/main.html')
+    @@include('parts/events.html')
+    @@include('parts/certificate.html')
+    @@include('parts/team.html')
+    @@include('parts/testimonails.html')
+    @@include('parts/index-blog.html')
+    @@include('parts/subscribe.html')
+    @@include('parts/footer.html')
+    <!-- примечание: перед сборкой проекта и pushем на github в линках убрать / (href="/scss/style.min.css" -> href="scss/style.min.css") -->
+    <!-- пример: -->
+    <!-- <h1>title</h1> -->
+    <!-- <img src="img/Screenshot_1.jpg" alt="PNG"> -->
+</body>
+
+<script src="js/main.min.js"></script>
+
+</html>

@@ -1,0 +1,133 @@
+@import 'extend';
+
+.team {
+    background-color: $gray200;
+    z-index: 5;
+    transform: translateY(-4rem);
+    padding-top: 173px;
+    padding-bottom: 180px;
+
+    .container {
+        .team__top {
+            position:relative;
+
+            .moon-svg{
+                position: absolute;
+                top: -50px;
+                left: -100px;
+            }
+
+            .dots-svg{
+                position: absolute;
+                top: -9rem;
+                right: 13rem;
+            }
+            
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 48px;
+            align-items: end;
+
+            .team__title {
+                position: relative;
+
+                
+
+                &-h2 {
+                    font-weight: 700;
+                    font-size: $fz16;
+                    color: $grey900;
+                    line-height: 150%; // 24px
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+                &-h1 {
+                    font-weight: 900;
+                    font-size: $fz-lg-max;
+                    color: $grey900;
+                    line-height: 130%; // 60px
+                }
+            }
+            .btns{
+                position: relative;
+                width: 130px;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                gap: 26px;
+                align-items: center;
+                transform: translateY(1.95rem);
+
+                .prev {
+                    
+                    &:hover img, .next, .next:hover, .next:hover img{
+                        opacity: 0;
+                    }
+                    &:hover{
+                        // transition: .2s ease-in-out;
+                        width: 48px;
+                        height: 48px;
+                        position: absolute;
+                        background: url(../img/arrowRightHover.svg);
+                        transform: rotate(180deg);
+                    }
+                }
+                .next {
+                    transition: .2s ease-in-out;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    &:hover img{
+                        opacity: 0;
+                    }
+                    &:hover{
+                        transition: .2s ease-in-out;
+                        width: 48px;
+                        height: 48px;
+                        background: url(../img/arrowRightHover.svg);
+                    }
+                }
+            }
+        }
+        .team__slider {
+            overflow: hidden;
+            position: relative;
+            height: 416px;
+
+            &-line {
+                position: absolute;
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+                
+
+                .slider-card {
+                    text-align: center;
+
+                    img{
+                        width: 285px;
+                    }
+                    .speaker {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 150%;
+                        color: $grey800;
+                    }
+                    .position {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 160%;
+                        color: $grey700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

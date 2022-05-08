@@ -1,0 +1,14 @@
+.btn-primary {
+    max-width: 206px;
+    height: 52px;
+    padding: 0px 40px;
+    border-radius: 4px;
+    background: $btn-primary;
+    color: $white;
+    transition: all 1s;
+
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+}

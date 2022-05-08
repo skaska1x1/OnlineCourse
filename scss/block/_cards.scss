@@ -1,0 +1,80 @@
+.card-link{
+    .card{
+        display: flex;
+        justify-content: start;
+        gap: 32px;
+        
+
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        border-radius: 4px;
+        border: 1px solid $border-card;
+        background-color: $white;
+    
+        // &-img{}
+        transition: 1s all;
+
+        &:hover{
+            box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+            // background-color: rgb(207, 254, 169);
+        }
+        &-content{
+            max-width: 322px;
+            margin-top: 32px;
+            .badge{
+                @extend %small;
+                border-radius: 4px;
+                text-align: center;
+                padding: 1px 7px;
+                margin-bottom: 20px;
+            }
+
+            .item-name{
+                color: $grey900;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 150%;
+                margin-bottom: 20px;
+            }
+
+            .card-bottom{
+                display: flex;
+                justify-content: start;
+
+                .price{
+                    margin-right: 8px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $price;
+                }
+                .speaker{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $grey700;
+                }
+
+            }
+        }
+    }
+}
+
+.badge-marketing{
+    max-width: 79px;
+    background-color: $badge-mk;
+}
+
+.badge-management{
+    max-width: 97px;
+    background-color: $badge-mn;
+}
+
+.badge-hr{
+    max-width: 112px;
+    background-color: $badge-hr;
+}
+
+.badge-design{
+    max-width: 59px;
+    background-color: $badge-design;
+}

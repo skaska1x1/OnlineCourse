@@ -1,0 +1,151 @@
+@import 'block/colors';
+
+
+.header__top {
+    @extend %display-flex;
+    align-items: center;
+    padding-top: 20px;
+    // margin-bottom: 128px;
+
+    .header__logo {
+        display: flex;
+
+        picture {
+            width: 130px;
+            height: 22px;
+        }
+    }
+
+    
+    .header__burger{
+        position: absolute;
+        top: -95rem;
+        left: -1rem;
+        right: -1rem;
+        // height: 80vh;
+        background-color: #fff;
+
+        .burger__menu{
+            // position: absolute;
+            // top: 24px;
+            // left: 6rem;
+            // right: 6rem;
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
+
+            .burger__item {
+                cursor:pointer;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                width: 100%;
+                transition: all 1s;
+                
+                // background-color: red;
+                // border: 1px solid #000;
+                
+    
+                &:nth-child(1) {
+                    margin-top: 20px;
+                }
+    
+                &:hover {
+                    // border-bottom: 1px solid $header-menu;
+                    opacity: 0.6;
+                }
+    
+                .burger__link {
+                    color: $header-menu;
+                }
+            }
+
+        }
+
+    }
+
+    .header__menu {
+        @extend %display-flex;
+
+        .menu__item {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            margin-right: 40px;
+            transition: all 1s;
+            cursor: pointer;
+
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+
+            &:hover {
+                // border-bottom: 1px solid $header-menu;
+                opacity: 0.6;
+            }
+
+            .menu__link {
+                color: $header-menu;
+            }
+        }
+    }
+
+    // .main__btn {
+    //     transition: all 1s;
+
+    //     &:hover {
+    //         opacity: 0.8;
+    //     }
+    // }
+
+    .header__profile {
+        @extend %display-flex;
+        
+        max-width: $header__profile;
+        align-items: center;
+
+        .main__btn {
+            margin-right: 36px;
+            transition: all 1s;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .header__user-menu {
+            @extend %display-flex;
+            max-width: 144px;
+            position: relative;
+            align-items: center;
+            gap: 5px;
+
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+
+            .user-menu__sign-in {
+                color: $header-menu;
+                display: flex;
+                align-items: center;
+                transition: all 1s;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+
+            }
+
+            .user-menu__sign-up {
+                position: relative;
+                color: $header-menu;
+                transition: all 1s;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
