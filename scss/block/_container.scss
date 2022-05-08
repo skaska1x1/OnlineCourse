@@ -1,9 +1,0 @@
-@import './size';
-@import 'block/colors';
-
-.container {
-    max-width: $container-width +30px;
-    margin: 0 auto;
-    padding: 0 15px;
-    align-items: center;
-}
